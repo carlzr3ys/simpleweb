@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleWeb — Clean & Simple</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">SimpleWeb</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="hero-label">Welcome</p>
+        <h1>Build something<br><span class="highlight">beautiful & simple</span></h1>
+        <p class="hero-text">A clean, fast website with no frameworks — just HTML, CSS, and a touch of JavaScript.</p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">Explore</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-lead">SimpleWeb is a minimal starting point for your next project. No build tools, no dependencies — open the file and go.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Dependencies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Responsive</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">&lt;1s</span>
+            <span class="stat-label">Load time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>Static files served directly — no server-side rendering or heavy bundles.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>Mobile First</h3>
+            <p>Looks great on every screen size, from phones to wide desktops.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Modern Design</h3>
+            <p>Clean typography, subtle animations, and a thoughtful color palette.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Have a question? Send us a message.</p>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" id="form-status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 SimpleWeb. Built with simplicity in mind.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
